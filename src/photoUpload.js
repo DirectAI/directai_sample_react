@@ -16,7 +16,6 @@ function stringToColor(str) {
 
 function PhotoUpload() {
   const [selectedImage, setSelectedImage] = useState(null);
-  const [imageFile, setImageFile] = useState(null); // Store the image file
   const [tlbrs, setTlbrs] = useState(null); // Store the TLBR array
   const canvasRef = useRef(null); // Reference to the canvas element
 
