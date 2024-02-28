@@ -42,7 +42,8 @@ const modelDefinition = {
         "examples_to_exclude": [],
         "detection_threshold": 0.15
       }
-    ]
+    ],
+    "nms_threshold": 0.25
 }
 
 app.post('/detect', upload.single('data'), async (req, res) => { // Use multer middleware to handle multipart/form-data
